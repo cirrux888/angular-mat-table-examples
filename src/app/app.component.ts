@@ -20,6 +20,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 
+export interface InvoiceElement {
+  description: string;
+  debit: string;
+  credit: string;
+  balance: string;
+  invoice: string; 
+  date: string;
+}
+
+const ELEMENT_DATA1: InvoiceElement[] = [
+  {description: 'May 2020 Invoice', debit: '$20.00', credit: '$0.00', balance: '$20.00', invoice: '62DBD37D-0003', date: 'May 12, 8:00 PM'}
+]
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -28,7 +41,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = 
+    ['description', 'debit', 'credit', 'balance', 'invoice', 'date'];
 
-  dataSource = ELEMENT_DATA;
+  dataSource = ELEMENT_DATA1;
 }
