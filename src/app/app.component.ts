@@ -30,7 +30,9 @@ export interface InvoiceElement {
 }
 
 const ELEMENT_DATA1: InvoiceElement[] = [
-  {description: 'May 2020 Invoice', debit: '$20.00', credit: '$0.00', balance: '$20.00', invoice: '62DBD37D-0003', date: 'May 12, 8:00 PM'}
+  {description: 'May 2020 Invoice', debit: '$20.00', credit: '$0.00', balance: '$20.00', invoice: '62DBD37D-0003', date: 'May 12, 8:00 PM'},
+  {description: 'April 2020 Invoice', debit: '$20.00', credit: '$0.00', balance: '$20.00', invoice: '62DBD37D-0002', date: 'April 12, 8:00 PM'},
+  {description: 'March 2020 Invoice', debit: '$20.00', credit: '$0.00', balance: '$20.00', invoice: '62DBD37D-0001', date: 'March 12, 8:00 PM'},
 ]
 
 @Component({
